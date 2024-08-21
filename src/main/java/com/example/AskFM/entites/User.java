@@ -48,11 +48,11 @@ public class User extends BaseEntity {
     @JoinColumn(name = "user_id")
     private List<Contact> contacts;
 
-    @OneToMany(mappedBy = "from_user", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-    private List<Question> questions_from_me;
-
-    @OneToMany(mappedBy = "to_user", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-    private List<Question> questions_to_me;
+//    @OneToMany(mappedBy = "from_user", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+//    private List<Question> questions_from_me;
+//
+//    @OneToMany(mappedBy = "to_user", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+//    private List<Question> questions_to_me;
 }
 
 

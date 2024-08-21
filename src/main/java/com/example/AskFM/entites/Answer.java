@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "questions")
+@Table(name = "answers")
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -23,6 +23,7 @@ public class Answer extends BaseEntity{
             sequenceName = "answers_seq",
             allocationSize = 1
     )
+    @Column(name = "answer_id")
     private Long id;
 
     @Column(nullable = false)

@@ -32,13 +32,13 @@ public class Question extends BaseEntity{
     private String question_text;
 
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-    @JoinColumn(name = "from_user_id", referencedColumnName = "user_id")
-    private User from_user;
-
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-    @JoinColumn(name = "to_user_id", referencedColumnName = "user_id")
-    private User to_user;
+//    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+//    @JoinColumn(name = "from_user_id", referencedColumnName = "user_id")
+//    private User from_user;
+//
+//    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+//    @JoinColumn(name = "to_user_id", referencedColumnName = "user_id")
+//    private User to_user;
 
     @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     @JoinColumn(name = "parent_question_id", referencedColumnName = "question_id")
